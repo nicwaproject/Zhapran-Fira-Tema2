@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="icon" href="nicwaProject.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@400;700;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@400;700;900&family=Noto+Serif+Khitan+Small+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+SK:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+SK:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+SK:wght@100..400&family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cover">
+        <h1>WEDDING INVITATION</h1>
+        <h2 id="name1">ZHAPRAN</h2>
+        <h2>&</h2>
+        <h2 id="name2">FIRA</h2>
+        <p>DEAR</p>
+        <p id="guest">GUEST</p>
+        <button id="openInvitation" class="transparentButton">
+            <i class="fas fa-envelope"></i> Open Invitation
+        </button>
+        
+    </div>
+    <div id="invitation" style="display:none;">
+        <nav>
+            <ul>
+                <li><a href="#section1"><i class="fas fa-home"></i></a></li>
+                <li><a href="#section2"><i class="fas fa-user"></i></a></li>
+                <li><a href="#section4"><i class="fas fa-calendar"></i></a></li>
+                <li><a href="#section5"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#section6"><i class="fas fa-gift"></i></a></li>
+            </ul>
+        </nav>
+
+        <section id="section1">
+            <h1>THE WEDDING OF</h1>
+            <h2>ZHAPRAN</h2>
+            <h2>&</h2>
+            <h2>FIRA</h2>
+            <p>Sabtu, 04 Februari 2023</p>
+            <div class="photo-container">
+                <img src="FOTO2.jpeg" alt="Zhapran" class="photo">
+            </div>
+            <div id="countdown">
+                <h3>Countdown to the Wedding:</h3>
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <div id="days">00</div>
+                        <div class="label">Hari</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="hours">00</div>
+                        <div class="label">Jam</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="minutes">00</div>
+                        <div class="label">Menit</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="seconds">00</div>
+                        <div class="label">Detik</div>
+                    </div>
+                </div>
+            </div>
+            <p class="invited">We invited you to celebrate our wedding</p>
+        </section>
+
+        <section id="section2">
+            <h2>Our Profile</h2>
+            <div class="profile-container">
+                <div class="profile">
+                    <div class="role">The Groom</div>
+                    <div class="profile-info info2">
+                        <div class="initial-circle">Z</div>
+                        <div class="name">Muhammad Riziq Zhapran, S. Ag</div>
+                        <div class="parents">Putra dari Bapak Mulawarman & Ibu Nurul Hidayati</div>
+                    </div>
+                </div>
+                
+                <div class="separator">
+                    <span>Dengan</span>
+                </div>
+                
+                <div class="profile">
+                    <div class="profile-info">
+                        <div class="initial-circle">F</div>
+                        <div class="name">Ghafira Maraini, S. Pd</div>
+                        <div class="parents">Putri dari Bapak Marzuki & Ibu Nuraini</div>
+                    </div>
+                    <div class="role">The Bride</div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="section3">
+            <h2>We Found Love</h2>
+            <div class="verse-container">
+                <p class="verse">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</p>
+                <p class="translation">"Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
+                <p class="namasurah">(Surah Ar-Rum: 21)</p>
+            </div>
+        </section>
+        
+        <section id="section4">
+            <h2>Save the Date</h2>
+            <div class="event-container">
+                <!-- Akad Section -->
+                <div class="event">
+                    <div class="event-type">
+                        <p>Akad</p>
+                    </div>
+                    <div class="event-details">
+                        <img src="mawar2.jpeg" alt="Akad Photo">
+                        <div class="details">
+                            <div class="date-section">
+                                <div class="day-date">
+                                    <div class="day">SABTU</div>
+                                    <div class="date">03</div>
+                                </div>
+                                <div class="month-year">
+                                    <div class="month">AGUSTUS</div>
+                                    <div class="year">2024</div>
+                                    <div class="time">09:00 WITA - SELESAI</div>
+                                </div>
+                            </div>
+                            <div class="separator2"></div>
+                            <div class="time-location-section">
+                                <div class="location">
+                                    <strong>Lokasi Acara :</strong>
+                                    <div>Warung Farhana,<br>Jl. Raya Sengkol, Praya, Lombok Tengah</div>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com" class="map-button" target="_blank">View Location</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Resepsi Section -->
+                <div class="event">
+                    <div class="event-details">
+                        <img src="mawar1.jpeg" alt="Resepsi Photo">
+                        <div class="details">
+                            <div class="date-section">
+                                <div class="day-date">
+                                    <div class="day">SABTU</div>
+                                    <div class="date">03</div>
+                                </div>
+                                <div class="month-year">
+                                    <div class="month">AGUSTUS</div>
+                                    <div class="year">2024</div>
+                                    <div class="time">09:00 WITA - SELESAI</div>
+                                </div>
+                            </div>
+                            <div class="separator2"></div>
+                            <div class="time-location-section">
+                                <div class="location">
+                                    <strong>Lokasi Acara :</strong>
+                                    <div>Warung Farhana,<br>Jl. Raya Sengkol, Praya, Lombok Tengah</div>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com" class="map-button" target="_blank">View Location</a>
+                        </div>
+                    </div>
+                    <div class="event-type type2">
+                        <p>Resepsi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="section5">
+            <h2>RSVP & Ucapan</h2>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Aran Side" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Doend tipak penganten" required></textarea>
+                </div>
+                <div class="form-group">
+                    <select id="attendance" name="attendance" required>
+                        <option value="Kehadiran" disabled selected>Konfirmasi Kehadiran</option>
+                        <option value="Hadir">Hadir</option>
+                        <option value="Tidak Hadir">Tidak Hadir</option>
+                        <option value="Ragu">Ragu-Ragu</option>
+                    </select>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+            <p id="responseMessage"></p>
+            <div id="rsvpList"></div> <!-- Tempat untuk menampilkan pesan RSVP -->
+            <div id="attendanceCounts"></div> <!-- Tempat untuk menampilkan jumlah kehadiran -->
+        </section>
+        
+        <section id="section6">
+            <h2>Wedding Gift</h2>
+            <p>Kami sangat berterima kasih atas doa dan restu dari Anda. Jika ingin memberikan hadiah pernikahan, Anda dapat melakukannya melalui nomor rekening berikut:</p>
+            
+            <div class="bank-details">
+                <img src="mandiri.png" alt="Logo Bank" class="bank-logo">
+                <div class="bank-info">
+                    <p>Muhammad Riziq Zhapran</p>
+                    <p><span id="accountNumber">1610006114602</span></p>
+                    <button id="copyButton">Copy</button>
+                </div>
+            </div>
+            
+            <p id="copyMessage"></p>
+        </section>
+        
+        
+        <section id="section7">
+            <h2>ZF</h2>
+            <p>Kami mengucapkan terima kasih yang sebesar-besarnya atas kehadiran dan doa restu dari Anda semua. Kehadiran Anda merupakan anugerah dan doa restu Anda adalah berkat bagi kami. Semoga kita semua senantiasa dalam lindungan dan berkah Tuhan Yang Maha Esa.</p>
+            <p>TERIMA KASIH</p>
+            <h3>Zhapran & Fira<h3>
+        </section>
+        
+
+        <div class="section" id="section8">
+            <div class="brand-logo fade-slide">
+                <img src="nicwaprojectlogo.svg" alt="Nicwa_Project">
+            </div>
+            <div class="social-media fade-slide">
+                <a href="https://www.facebook.com/profile.php?id=61560664461271&mibextid=LQQJ4d" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/nicwaproject?igsh=enk4YWxoa24zNzY5&utm_source=qr" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/+6285974176110" target="_blank"><img src="whatsapp.png" alt="Whatsapp"></a>
+            </div>
+        </div>
+
+
+        <div class="audio-controls">
+            <img id="playPauseButton" src="play.png" alt="Play" class="play-btn">
+        </div>
+
+        <audio id="backgroundMusic" src="Christina Perri - A Thousand Years.mp3"></audio>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
