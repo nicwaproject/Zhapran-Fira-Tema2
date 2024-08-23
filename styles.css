@@ -609,6 +609,9 @@ button:hover {
     color: white;
     margin-top: 5px;
     font-style: italic;
+    background-color: white;
+    color: #122620;
+    border-radius: 5px;
 }
 
 .message-item h4 {
