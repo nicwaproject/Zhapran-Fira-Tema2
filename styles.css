@@ -592,6 +592,7 @@ button:hover {
     font-size: 1.5em;
     text-align: center;
     color: #122620;
+    overflow-y: hidden;
 }
 
 .message-item {
@@ -605,11 +606,12 @@ button:hover {
 
 .message-item h4 {
     margin: 0 0 5px 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .message-item p {
     margin: 0;
+    font-size: 0.8em;
 }
 
 .attendance-grid {
