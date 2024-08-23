@@ -585,6 +585,7 @@ button:hover {
     margin-bottom: 20px;
     font-size: 1.5em;
     text-align: center;
+    color: #122620;
 }
 
 .message-item {
@@ -592,7 +593,7 @@ button:hover {
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #122620;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -616,7 +617,7 @@ button:hover {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #122620;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -915,7 +916,11 @@ button:hover {
         height: 470px;
         object-fit: cover;
     }
-
+    /*SECTION 5*/
+    /* TAMPILAN PESAN*/
+    .container {
+        flex-direction: column;
+    }
     /* SECTION 6 */
     #section6 {
         background-image: url('background1.png');
