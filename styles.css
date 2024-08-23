@@ -570,6 +570,7 @@ button:hover {
     display: flex;
     justify-content: center;
     padding: 20px;
+    gap: 20px;
 }
 
 .message-box, .attendance-box {
@@ -610,13 +611,14 @@ button:hover {
 
 .attendance-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     text-align: center;
     flex-wrap: wrap;
 }
 
 .attendance-item {
-    width: 30%;
+    width: 20%;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
