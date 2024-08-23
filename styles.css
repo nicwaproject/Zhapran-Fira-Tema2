@@ -568,12 +568,13 @@ button:hover {
 /* TAMPILAN PESAN*/
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
 }
 
 .message-box, .attendance-box {
-    width: 48%;
+    width: 100%;
+    max-width: 500px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -610,6 +611,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .attendance-item {
