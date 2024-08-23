@@ -584,6 +584,7 @@ button:hover {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
+    overflow-y: auto; /* Tambahkan scroll vertikal */
 }
 
 .message-box h3, .attendance-box h3 {
@@ -600,7 +601,6 @@ button:hover {
     border-radius: 5px;
     background-color: #122620;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Tambahkan scroll vertikal */
 }
 
 .message-item h4 {
