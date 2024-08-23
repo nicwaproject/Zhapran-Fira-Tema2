@@ -197,11 +197,31 @@
                 </div>
                 <button type="submit">Kirim</button>
             </form>
-            <p id="responseMessage"></p>
-            <div id="rsvpList"></div> <!-- Tempat untuk menampilkan pesan RSVP -->
-            <div id="attendanceCounts"></div> <!-- Tempat untuk menampilkan jumlah kehadiran -->
+            
+            <div class="container">
+                <div class="message-box">
+                    <h3>Pesan Ucapan</h3>
+                <div id="messages"></div>
+            </div>
+
+        <div class="attendance-box">
+            <h3>Jumlah Kehadiran</h3>
+            <div class="attendance-grid">
+                <div class="attendance-item">
+                    <span id="hadirCount" class="attendance-number">0</span>
+                    <span class="attendance-label">Hadir</span>
+                </div>
+            <div class="attendance-item">
+                <span id="tidakHadirCount" class="attendance-number">0</span>
+                <span class="attendance-label">Tidak Hadir</span>
+            </div>
+            <div class="attendance-item">
+                <span id="raguCount" class="attendance-number">0</span>
+                <span class="attendance-label">Ragu-Ragu</span>
+            </div>
         </section>
-        
+
+                
         <section id="section6">
             <h2>Wedding Gift</h2>
             <p>Kami sangat berterima kasih atas doa dan restu dari Anda. Jika ingin memberikan hadiah pernikahan, Anda dapat melakukannya melalui nomor rekening berikut:</p>
