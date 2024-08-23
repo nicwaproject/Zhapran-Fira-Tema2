@@ -103,6 +103,7 @@ function fetchMessages() {
                 messageElement.innerHTML = `
                     <h4>${message.name}</h4>
                     <p>${message.message}</p>
+                    <p class="attendance-status">${message.attendance}</p>
                 `;
                 messagesContainer.appendChild(messageElement);
             });
