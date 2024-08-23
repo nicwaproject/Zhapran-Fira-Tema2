@@ -91,45 +91,33 @@ function togglePlayPause() {
 playPauseButton.addEventListener('click', togglePlayPause);
 
 // Fungsi untuk menampilkan pesan RSVP
-function displayRSVPs() {
+function fetchMessages() {
     fetch('https://zhapran-fira-tema-2.glitch.me/rsvp')
         .then(response => response.json())
         .then(data => {
-            rsvpList.innerHTML = ''; // Kosongkan daftar RSVP
-            data.forEach(rsvp => {
-                const rsvpItem = document.createElement('div');
-                rsvpItem.classList.add('rsvp-item');
-                rsvpItem.innerHTML = `
-                    <div class="rsvp-header">
-                        <strong>${rsvp.name}</strong> - ${rsvp.attendance}
-                    </div>
-                    <div class="rsvp-message">
-                        ${rsvp.message}
-                    </div>
-                    <div class="rsvp-timestamp">
-                        ${new Date(rsvp.timestamp).toLocaleString()}
-                    </div>
+            const messagesContainer = document.getElementById('messages');
+            messagesContainer.innerHTML = '';
+            data.forEach(message => {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message-item');
+                messageElement.innerHTML = `
+                    <h4>${message.name}</h4>
+                    <p>${message.message}</p>
                 `;
-                rsvpList.appendChild(rsvpItem);
+                messagesContainer.appendChild(messageElement);
             });
-            // Update jumlah kehadiran setelah menampilkan RSVP
-            updateAttendanceCounts();
-        })
-        .catch(error => console.error('Error:', error));
+        });
 }
 
 // Fungsi untuk menampilkan jumlah kehadiran
-function updateAttendanceCounts() {
+function fetchAttendanceCounts() {
     fetch('https://zhapran-fira-tema-2.glitch.me/rsvp/attendance')
         .then(response => response.json())
         .then(data => {
-            attendanceCountsElement.innerHTML = `
-                <p>Jumlah yang hadir: ${data.hadir}</p>
-                <p>Jumlah yang tidak hadir: ${data.tidakHadir}</p>
-                <p>Jumlah yang ragu-ragu: ${data.ragu}</p>
-            `;
-        })
-        .catch(error => console.error('Error:', error));
+            document.getElementById('hadirCount').textContent = data.hadir;
+            document.getElementById('tidakHadirCount').textContent = data.tidakHadir;
+            document.getElementById('raguCount').textContent = data.ragu;
+        });
 }
 
 // Event listener untuk form submit
@@ -164,4 +152,5 @@ rsvpForm.addEventListener('submit', function(event) {
 });
 
 // Panggil displayRSVPs() saat halaman pertama kali dimuat
-displayRSVPs();
+fetchMessages();
+fetchAttendanceCounts();
